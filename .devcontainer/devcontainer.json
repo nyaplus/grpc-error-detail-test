@@ -1,0 +1,70 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/docker-existing-docker-compose
+// If you want to run as a non-root user in the container, see .devcontainer/docker-compose.yml.
+{
+	"name": "grpc-error-detail Dev Container",
+	// Update the 'dockerComposeFile' list if you have more compose files or use different names.
+	// The .devcontainer/docker-compose.yml file contains any overrides you need/want to make.
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+	// The 'service' property is the name of the service for the container that VS Code should
+	// use. Update this value and .devcontainer/docker-compose.yml to the real service name.
+	"service": "dev",
+	// The optional 'workspaceFolder' property is the path VS Code should open by default when
+	// connected. This is typically a file mount in .devcontainer/docker-compose.yml
+	"workspaceFolder": "/workspace",
+	"containerEnv": {
+	},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Uncomment the next line if you want start specific services in your Docker Compose config.
+	// "runServices": [],
+	// Uncomment the next line if you want to keep your containers running after VS Code shuts down.
+	// "shutdownAction": "none",
+	// Uncomment the next line to run commands after the container is created - for example installing curl.
+	// "postCreateCommand": "apt-get update && apt-get install -y curl",
+	// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "vscode"
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"EditorConfig.EditorConfig",
+				"golang.Go",
+				"foxundermoon.shell-format",
+				"MS-CEINTL.vscode-language-pack-ja",
+				"formulahendry.vscode-mysql",
+				"moshfeu.compare-folders",
+				"kumar-harsh.graphql-for-vscode",
+				"mhutchie.git-graph",
+				"donjayamanne.githistory",
+				"eamodio.gitlens",
+				"zxh404.vscode-proto3",
+				"cweijan.vscode-database-client2",
+				"ms-azuretools.vscode-docker",
+				"streetsidesoftware.code-spell-checker",
+				"amazonwebservices.aws-toolkit-vscode",
+				"Gydunhn.vsc-essentials",
+				"formulahendry.auto-close-tag",
+				"formulahendry.auto-rename-tag",
+				"bungcip.better-toml",
+				"saikou9901.evilinspector",
+				"ms-vscode.makefile-tools",
+				"shd101wyy.markdown-preview-enhanced",
+				"DavidAnson.vscode-markdownlint",
+				"peakchen90.open-html-in-browser",
+				"IBM.output-colorizer",
+				"esbenp.prettier-vscode",
+				"mechatroner.rainbow-csv",
+				"TabNine.tabnine-vscode",
+				"GitHub.vscode-github-actions",
+				"mrmlnc.vscode-duplicate",
+				"inferrinizzard.prettier-sql-vscode",
+				"bufbuild.vscode-buf"
+			]
+		}
+	}
+}
